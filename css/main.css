@@ -134,7 +134,6 @@ nav ul li :hover {
 
 #search > * {
   margin-bottom: 20px;
-  text-align: left;
 }
 #searchIcon {
   display: inline;
@@ -162,8 +161,6 @@ nav ul li :hover {
   background: #0065fc;
   border: none;
   border-radius: 0 15px 15px 0;
-  -webkit-transform: translateX(-5px);
-  -ms-transform: translateX(-5px);
   transform: translateX(-5px);
   cursor: pointer;
 }
