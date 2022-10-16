@@ -80,11 +80,48 @@ nav ul li :hover {
 }
 
 /* Responsive Nav Bar */
-@media all and (max-width: 600px) {
-  nav ul {
+
+@media screen and (max-width: 767px) {
+  header {
     flex-direction: column;
   }
-  nav ul li {
+  .navbar {
+    flex-direction: column;
+  }
+  #logo {
     text-align: center;
+    margin-left: 50px;
+  }
+  nav {
+    border-bottom: #f2f2f2 5px solid;
+  }
+  nav > div {
+    width: 50%;
+    text-align: center;
+  }
+  nav > div > a {
+    padding: 20px 0;
+  }
+  nav ul li a:hover {
+    border-top: none;
+    margin-bottom: -5px;
+    border-bottom: #0065fc 5px solid;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  /* Header */
+  nav {
+    border-bottom: 0;
+    font-size: 14px;
+  }
+  nav > div {
+    border-bottom: #f2f2f2 3px solid;
+    width: 100%;
+  }
+  nav ul li a :hover {
+    border-top: none;
+    margin-bottom: -3px;
+    border-bottom: #0065fc 3px solid;
   }
 }
