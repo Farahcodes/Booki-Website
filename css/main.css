@@ -28,6 +28,7 @@ nav {
   width: 100%;
   padding-left: 30px;
   padding-right: 10px;
+  margin-bottom: 30px;
 }
 .logo {
   display: inline-block;
@@ -63,8 +64,6 @@ header li {
   padding: 10px 15px;
   text-decoration: none;
   color: var(--clr-black);
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -84,4 +83,71 @@ header li {
     border-top: none;
     border-bottom: var(--clr-primary) solid;
   }
+}
+
+/* Search Form */
+
+#search {
+  padding-left: 30px;
+}
+
+#search h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--clr-black);
+  margin-bottom: 20px;
+}
+#search p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+#searchIcon {
+  display: inline;
+  width: 40px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+}
+
+#searchInput {
+  outline: none;
+  height: 49px;
+  width: 300px;
+  border: 1px solid #f2f2f2;
+  padding-left: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 0;
+}
+
+#searchBtn {
+  height: 50px;
+  padding: 0 20px;
+  font-weight: 700;
+  color: #fff;
+  background: #0065fc;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--clr-black);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--clr-black);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--clr-black);
 }
