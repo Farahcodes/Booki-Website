@@ -25,13 +25,15 @@ body {
 /********** Header **********/
 
 #logo {
-  margin-left: 3.5%;
-  font-size: 20px;
-  /* padding: 7.5px 10px 7.5px 0; */
+  position: absolute;
+  width: 61px;
+  height: 29px;
+  left: 55px;
+  top: 44px;
 }
-img {
+/* img {
   padding: 0%;
-}
+} */
 
 nav {
   margin-bottom: 2em;
@@ -40,18 +42,20 @@ nav {
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  /* padding: 20px 50px; */
   margin-bottom: 5%;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  position: absolute;
+  width: 381px;
+  height: 19px;
+  left: 982px;
+  top: 48px;
 }
 nav ul {
   list-style-type: none;
