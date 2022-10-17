@@ -23,239 +23,51 @@ body {
 }
 
 /********** Header **********/
-
-#logo {
-  position: absolute;
-  width: 61px;
-  height: 29px;
-  left: 55px;
-  top: 44px;
-}
-/* img {
-  padding: 0%;
-} */
-
+/* Navbar */
 nav {
-  margin-bottom: 2em;
-  padding: 0 15px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* padding: 20px 50px; */
-  margin-bottom: 5%;
+.logo {
+  display: inline-block;
+}
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+  height: 50px;
+  width: 100px;
+  object-fit: cover;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  width: 381px;
-  height: 19px;
-  left: 982px;
-  top: 48px;
 }
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-nav ul li {
-  cursor: pointer;
-  /* padding: 0.5rem; */
-  /* padding: auto; */
-  flex: auto;
-  text-align: center;
-}
-
-nav ul li a {
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
   text-decoration: none;
   color: var(--clr-black);
-  display: block;
-  padding: 40px 50px;
-  font-size: 1.2em;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
 }
-
-nav ul li :hover {
-  color: var(--clr-primary);
+.nav-item a:hover {
   border-top: var(--clr-primary) solid;
-}
-
-/********** Responsive Header **********/
-
-@media screen and (max-width: 767px) {
-  header {
-    flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-  }
-  .navbar {
-    flex-direction: column;
-  }
-  #logo {
-    text-align: center;
-    /* margin-left: 50px; */
-  }
-  nav {
-    border-bottom: #f2f2f2 5px solid;
-  }
-  nav > div {
-    width: 50%;
-    text-align: center;
-  }
-  nav > div > a {
-    padding: 20px 0;
-  }
-  nav ul li a:hover {
-    border-top: none;
-    margin-bottom: -5px;
-    border-bottom: #0065fc 5px solid;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  /* Header */
-  nav {
-    border-bottom: 0;
-    font-size: 14px;
-  }
-  nav > div {
-    border-bottom: #f2f2f2 3px solid;
-    width: 100%;
-  }
-  nav ul li a :hover {
-    border-top: none;
-    margin-bottom: -3px;
-    border-bottom: #0065fc 3px solid;
-  }
-}
-/********** Search Form **********/
-
-#search > * {
-  margin-bottom: 20px;
-  margin-left: 2.5rem;
-}
-#searchIcon {
-  display: inline;
-  width: 40px;
-  background-color: #f2f2f2;
-  padding: 15px;
-  border-radius: 15px 0 0 15px;
-}
-#searchInput {
-  outline: none;
-  height: 49px;
-  width: 300px;
-  border: 1px solid #f2f2f2;
-  padding-left: 1em;
-  font-size: 1em;
-  font-weight: 700;
-  border-radius: 0;
-}
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--clr-black);
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--clr-black);
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: var(--clr-black);
-}
-
-#searchBtn {
-  height: 50px;
-  padding: 0 20px;
-  font-weight: 700;
-  color: #fff;
-  background: #0065fc;
-  border: none;
-  border-radius: 0 15px 15px 0;
-  transform: translateX(-5px);
-  cursor: pointer;
-}
-#searchBtn:hover {
-  background: #1774ff;
-}
-#searchBtnMobile {
-  display: none;
-}
-
-/********** Responsive Search Form **********/
-@media screen and (min-width: 767px) and (max-width: 992px) {
-  #searchInput {
-    width: 300px;
-  }
-  #searchBtn {
-    height: 48px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #search h2,
-  #search p {
-    margin-left: 20px;
-    text-align: left;
-  }
-  #search {
-    text-align: center;
-    margin: 0 20px;
-  }
-  #searchInput::-webkit-input-placeholder {
-    font-size: 0.8em;
-  }
-  #searchInput::-moz-placeholder {
-    font-size: 0.8em;
-  }
-  #searchInput:-ms-input-placeholder {
-    font-size: 0.8em;
-  }
-  #searchInput::-ms-input-placeholder {
-    font-size: 0.8em;
-  }
-  #searchInput::placeholder {
-    font-size: 0.8em;
-  }
-  #searchInput {
-    height: 50px;
-    width: 65%;
-  }
-  #searchBtn {
-    display: none;
-  }
-  #searchBtnMobile {
-    display: inline-block;
-    height: 49px;
-    padding: 0 17px;
-    font-weight: 700;
-    color: #fff;
-    background: #0065fc;
-    border: none;
-    border-radius: 15px;
-    transform: translateX(-20px);
-    cursor: pointer;
-  }
-}
-@media screen and (max-width: 300px) {
-  #search {
-    margin: 0;
-  }
-  #searchInput {
-    height: 49px;
-    width: 55%;
-    border: #f2f2f2 1px solid;
-  }
-  #searchIcon {
-    margin-left: 10px;
-  }
 }
