@@ -50,20 +50,21 @@
       <section id="search">
         <h2>Find a place for your dream vacation</h2>
         <p>Downtown or in nature</p>
+
         <form novalidate>
-          <div id="searchIcon">
+          <div id="searchForm">
             <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <input
+              type="search"
+              id="searchInput"
+              name="searchInput"
+              placeholder="Marseille, France"
+            />
+            <button id="searchBtn">
+              <span>Search</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
-          <input
-            type="search"
-            id="searchInput"
-            name="searchInput"
-            placeholder="Marseille, France"
-          />
-          <button id="searchBtn">Search</button>
-          <button id="searchBtnMobile">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
         </form>
       </section>
       <!-- End of Search form -->
