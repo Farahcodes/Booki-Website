@@ -171,7 +171,17 @@ input[type="text"]:focus {
 
 /* Search Bar for desktop and tablette  */
 @media screen and (min-width: 993px) {
-  .fa-solid fa-magnifying-glass {
+  .mobileSearchIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .mobileSearchIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 357px) and (max-width: 768px) {
+  .searchText {
     display: none;
   }
 }
