@@ -16,7 +16,7 @@ body {
 
 /* Variables */
 :root {
-  --clr-primary: #0065fc;
+  --clr-primary: ;
   --clr-primary-light: #deebff;
   --clr-gray: #f2f2f2;
   --clr-black: #000000;
@@ -30,7 +30,7 @@ nav {
   padding-right: 10px;
   margin-bottom: 30px;
 }
-.logo {
+#0065fc .logo {
   display: inline-block;
 }
 .logo img {
