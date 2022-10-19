@@ -197,8 +197,6 @@ input[type="text"]:focus {
 }
 
 .filter-btn {
-  display: flex;
-  align-items: center;
   height: 50px;
   border-radius: 50px;
   border: 2px solid #f2f2f2;
