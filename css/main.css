@@ -89,6 +89,7 @@ header li {
 
 #search {
   padding-left: 30px;
+  margin-bottom: 20px;
 }
 
 #search h2 {
@@ -184,4 +185,46 @@ input[type="text"]:focus {
   .searchText {
     display: none;
   }
+}
+
+/* Filters section */
+.filters-section {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 11px;
+  padding-left: 30px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #f2f2f2;
+  background-color: #ffff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 0px;
+  transition-duration: 0.4s;
+  border-left: none;
+}
+.btn-label {
+  margin-left: 10px;
+}
+.filter-btn:hover {
+  background-color: #deebff;
+}
+.filter-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #deebff;
+  background-color: #deebff;
+  color: #0065fc;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 2px;
 }
