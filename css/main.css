@@ -58,6 +58,7 @@ header li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: -11px;
 }
 .nav-item a {
   display: inline-block;
