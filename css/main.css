@@ -82,6 +82,10 @@ header li {
   .nav-item a:hover {
     border-top: none;
     border-bottom: var(--clr-primary) solid;
+    margin-bottom: -5px;
+  }
+  nav {
+    border-bottom: #f2f2f2 5px solid;
   }
 }
 
