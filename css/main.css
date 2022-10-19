@@ -197,8 +197,9 @@ input[type="text"]:focus {
 }
 #filters {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .filter-btn {
@@ -234,11 +235,6 @@ input[type="text"]:focus {
 
 @media only screen and (max-width: 767px) {
   .filters-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #filters {
     display: flex;
     flex-direction: column;
     align-items: center;
