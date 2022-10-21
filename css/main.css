@@ -24,6 +24,12 @@ body {
 
 /********** Header **********/
 /* Navbar */
+.container {
+  max-width: 1400px;
+  margin: auto;
+  display: block;
+}
+
 nav {
   width: 100%;
   padding-left: 30px;
@@ -58,11 +64,10 @@ header li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: -11px;
 }
 .nav-item a {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 40px 15px;
   text-decoration: none;
   color: var(--clr-black);
   font-weight: 400;
