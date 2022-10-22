@@ -206,6 +206,7 @@ input[type="text"]:focus {
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 30px;
+  margin-bottom: 20px;
 }
 #filters {
   display: flex;
@@ -247,4 +248,20 @@ input[type="text"]:focus {
   font-size: 20px;
   padding: 10px;
   /* margin-top: 2px; */
+}
+
+/* Information section */
+.info {
+  display: flex;
+  padding-left: 30px;
+}
+.info-icon {
+  color: var(--clr-primary);
+  padding: 2px 8px;
+  border: var(--clr-gray) 2px solid;
+  border-radius: 15px;
+}
+.info-text {
+  margin-left: 10px;
+  line-height: 26px;
 }
