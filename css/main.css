@@ -283,6 +283,7 @@ input[type="text"]:focus {
   align-content: flex-start;
   flex-wrap: wrap;
   margin-right: 30px;
+  margin-left: 30px;
   max-width: 1100px;
 }
 #accomodations-section h3 {
@@ -330,4 +331,23 @@ input[type="text"]:focus {
 }
 .empty-star {
   color: var(--clr-gray);
+}
+
+/* Popular section */
+#popular-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  height: 100%;
+  width: 90%;
+  justify-content: space-between;
+}
+aside h3 {
+  width: 90%;
+  margin-bottom: 20px;
 }
