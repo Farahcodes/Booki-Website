@@ -338,31 +338,3 @@ input[type="text"]:focus {
 }
 
 /* Popular section */
-#popular-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  padding: 30px;
-  margin-top: 20px;
-  margin-right: 30px;
-  background: #f2f2f2;
-  border-radius: 20px;
-  height: 100%;
-  width: 30%;
-  justify-content: space-between;
-}
-aside h3 {
-  width: 90%;
-  margin-bottom: 20px;
-}
-.popular-accomodation-card {
-  display: flex;
-  height: 180px;
-  cursor: pointer;
-  margin: 10px auto;
-  background: #fff;
-  padding: 6px;
-  border-radius: 25px;
-  -webkit-box-shadow: 0 0 10px rgb(160 160 160);
-  box-shadow: 0 0 10px rgb(160 160 160);
-}
