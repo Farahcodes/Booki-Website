@@ -560,3 +560,10 @@ aside h3 {
     width: 100%;
   }
 }
+@media screen and (max-width: 300px) {
+  .column1,
+  .column2 {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
