@@ -355,3 +355,14 @@ aside h3 {
   width: 90%;
   margin-bottom: 20px;
 }
+.popular-accomodation-card {
+  display: flex;
+  height: 180px;
+  cursor: pointer;
+  margin: 10px auto;
+  background: #fff;
+  padding: 6px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 10px rgb(160 160 160);
+  box-shadow: 0 0 10px rgb(160 160 160);
+}
