@@ -286,6 +286,9 @@ input[type="text"]:focus {
   margin-left: 30px;
   max-width: 1100px;
 }
+.accomodation-card:hover {
+  box-shadow: 0 0 15px rgb(95, 95, 95);
+}
 #accomodations-section h3 {
   width: 100%;
   margin-bottom: 20px;
@@ -300,6 +303,7 @@ input[type="text"]:focus {
   box-shadow: 0 0 10px rgb(160, 160, 160);
   height: 260px;
 }
+
 .accomodation-img-container {
   position: relative;
 }
