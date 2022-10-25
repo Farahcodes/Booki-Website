@@ -482,6 +482,37 @@ aside h3 {
     padding-left: 30px;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  #accomodations {
+    height: auto;
+  }
+  #accomodations-section {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+  }
+  aside {
+    margin-right: 30px;
+  }
+  .accomodation-card {
+    width: 45%;
+  }
+  .card-popular {
+    width: 100%;
+  }
+  .card-popular img {
+    width: 50%;
+  }
+  .accomodation-card img {
+    width: 100%;
+  }
+  #accomodations-section .full-star.empty-star {
+    margin: 0;
+  }
+  #section-activites {
+    margin-right: 30px;
+  }
+}
 
 /* Activities section */
 #activites-section {
