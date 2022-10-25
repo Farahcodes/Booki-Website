@@ -598,3 +598,51 @@ aside h3 {
     margin: 0 auto;
   }
 }
+
+/* Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #f2f2f2;
+  padding: 30px 50px;
+  margin-top: 50px;
+}
+footer ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+footer ul li:first-child {
+  font-weight: 700;
+  margin: 20px 0;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer ul li:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  footer {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    margin-bottom: 0;
+    font-size: 20px;
+    display: block;
+  }
+}
+@media screen and (max-width: 300px) {
+  footer {
+    -webkit-box-pack: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+  }
+}
