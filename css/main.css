@@ -221,6 +221,9 @@ input[type="text"]:focus {
   align-items: center;
   gap: 15px;
 }
+#filters li {
+  list-style: none;
+}
 #filters :hover {
   transform: scale(1.05);
 }
