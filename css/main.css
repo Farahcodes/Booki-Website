@@ -25,15 +25,18 @@ body {
 }
 
 /********** Header **********/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Navbar */
 .container {
-  max-width: 1400px;
-  margin: auto;
-  display: block;
+  width: 100%;
+  padding: 0 50px 0 50px;
 }
 
 nav {
-  width: 100%;
   padding-left: 30px;
   padding-right: 10px;
   margin-bottom: 30px;
@@ -84,6 +87,9 @@ header li {
 
 /* Responsive Navbar */
 @media (max-width: 640px) {
+  header {
+    flex-direction: column;
+  }
   .navbar {
     flex-direction: column;
   }
