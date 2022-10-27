@@ -13,6 +13,10 @@ html {
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 
 /* Variables */
 :root {
