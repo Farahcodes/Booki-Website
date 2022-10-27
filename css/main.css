@@ -374,12 +374,17 @@ aside {
   flex-wrap: wrap;
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1;
-  margin-right: 70px;
+  /* flex: 1; */
+  /* margin-right: 70px; */
+  flex-direction: column;
 }
 aside h3 {
   width: 90%;
   margin-bottom: 20px;
+}
+.popular-title {
+  display: flex;
+  justify-content: space-between;
 }
 .card-popular {
   cursor: pointer;
