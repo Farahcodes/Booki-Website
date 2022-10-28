@@ -338,7 +338,6 @@ input[type="text"]:focus {
   -webkit-box-shadow: 0 0 10px rgb(160, 160, 160);
   box-shadow: 0 0 10px rgb(160, 160, 160);
   height: 260px;
-  flex-basis: 30%;
 }
 
 .img-container {
