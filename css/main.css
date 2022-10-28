@@ -302,6 +302,7 @@ input[type="text"]:focus {
   border-radius: 20px;
   padding: 30px;
   margin-top: 20px;
+  flex-basis: 66.66%;
 }
 .accomodations-list {
   padding: 30px;
@@ -319,7 +320,6 @@ input[type="text"]:focus {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   /* margin-right: 30px; */
-  max-width: 1100px;
   flex-basis: 33.333333%;
 }
 .card:hover {
@@ -338,6 +338,7 @@ input[type="text"]:focus {
   -webkit-box-shadow: 0 0 10px rgb(160, 160, 160);
   box-shadow: 0 0 10px rgb(160, 160, 160);
   height: 260px;
+  flex-basis: 30%;
 }
 
 .img-container {
@@ -393,6 +394,7 @@ aside {
   /* margin-right: 70px; */
   flex-direction: column;
   min-height: 700px;
+  flex-basis: 30%;
 }
 aside h2 {
   width: 90%;
