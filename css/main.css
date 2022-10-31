@@ -62,9 +62,6 @@ nav {
 }
 .logo img {
   width: 175px;
-  vertical-align: middle;
-  height: 50px;
-  width: 100px;
   object-fit: cover;
   font-size: 20px;
   padding: 7.5px 10px 7.5px 0;
