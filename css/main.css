@@ -324,7 +324,7 @@ input[type="text"]:focus {
 }
 #accomodations-section h3 {
   width: 100%;
-  margin-bottom: 20px;
+  margin-top: 15px;
 }
 .card {
   cursor: pointer;
@@ -352,9 +352,9 @@ input[type="text"]:focus {
 .info {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
   justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  line-height: 25px;
 }
 #accomodations h4 {
   display: block;
@@ -362,9 +362,9 @@ input[type="text"]:focus {
   font-weight: bold;
 }
 
-#accomodations p {
+/* #accomodations p {
   margin: 5px;
-}
+} */
 .full-star {
   color: #0065fc;
 }
