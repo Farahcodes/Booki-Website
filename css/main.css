@@ -17,7 +17,7 @@ a {
   text-decoration: none;
   color: black;
 }
-h1 {
+/* h1 {
   font-size: 25px;
 }
 h2 {
@@ -28,7 +28,7 @@ h3 {
 }
 p {
   font-size: 20px;
-}
+} */
 
 /* Variables */
 :root {
@@ -132,7 +132,7 @@ header li {
 }
 #search p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 19px;
   margin-bottom: 20px;
 }
