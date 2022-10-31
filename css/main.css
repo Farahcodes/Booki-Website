@@ -21,9 +21,12 @@ h1 {
   font-size: 25px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 25px;
 }
 h3 {
+  font-size: 25px;
+}
+p {
   font-size: 20px;
 }
 
@@ -335,6 +338,7 @@ input[type="text"]:focus {
   border-radius: 25px;
   box-shadow: 0 0 10px rgb(160, 160, 160);
   width: 31%;
+  height: 50%;
   /* height: 260px; */
 }
 
@@ -347,6 +351,8 @@ input[type="text"]:focus {
   display: block;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 .info {
   display: flex;
@@ -396,6 +402,7 @@ aside h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 #popular-list .card {
   cursor: pointer;
@@ -404,7 +411,7 @@ aside h2 {
   padding: 6px;
   border-radius: 25px;
   box-shadow: 0 0 10px rgb(160, 160, 160);
-  display: flex;
+  /* display: flex; */
   /* justify-content: space-between; */
   width: 100%;
 }
@@ -412,6 +419,11 @@ aside h2 {
   display: flex;
   flex-direction: row;
 }
+#popular-list .img-container {
+  position: relative;
+  width: 39%;
+}
+
 #popular-list .card img {
   width: 100%;
   height: 260px;
@@ -426,9 +438,8 @@ aside h2 {
 #popular-list .card .info {
   padding: 10px;
   display: flex;
-  /* -webkit-box-orient: vertical;
-  -webkit-box-direction: normal; */
   flex-direction: column;
+  flex: 1.5;
   /* justify-content: space-around; */
 }
 #popular-list .card .info > * {
@@ -446,15 +457,15 @@ aside h2 {
 
 /* Responsive Accomodations section */
 @media screen and (min-width: 1430px) and (max-width: 1470px) {
-  .card {
+  /* .card {
     width: 30%;
   }
   .card img {
     width: 100%;
-  }
+  } */
 }
 @media screen and (min-width: 1360px) and (max-width: 1430px) {
-  .card {
+  /* .card {
     width: 45%;
     height: 270px;
   }
@@ -464,10 +475,10 @@ aside h2 {
   #accomodations-section,
   aside {
     min-height: 1015px;
-  }
+  } */
 }
 @media screen and (min-width: 1200px) and (max-width: 1360px) {
-  .card {
+  /* .card {
     width: 45%;
     height: 270px;
   }
@@ -480,11 +491,11 @@ aside h2 {
   }
   aside {
     max-width: 500px;
-  }
+  } */
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  #accomodations,
+  /* #accomodations,
   aside,
   #accomodations-section {
     min-height: auto;
@@ -508,10 +519,10 @@ aside h2 {
   }
   .card-popular .card-content {
     padding-left: 30px;
-  }
+  } */
 }
 @media screen and (min-width: 767px) and (max-width: 992px) {
-  #accomodations {
+  /* #accomodations {
     height: auto;
   }
   #accomodations-section {
@@ -539,7 +550,7 @@ aside h2 {
   }
   #section-activites {
     margin-right: 30px;
-  }
+  } */
 }
 
 /* Activities section */
