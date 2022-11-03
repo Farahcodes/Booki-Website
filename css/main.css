@@ -299,7 +299,7 @@ input[type="text"]:focus {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: space-between;
   /* margin-right: 30px; */
 }
@@ -540,8 +540,14 @@ aside h2 {
   padding: 0 30px 15px 30px;
   margin-bottom: 15px;
 }
+#activites-section {
+  display: flex;
+  flex-direction: column;
+}
 #activity-bloc {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   width: 24%;
 }
 
@@ -562,11 +568,7 @@ aside h2 {
   border-radius: 25px 25px 0 0;
 }
 
-.card2 {
-  padding-bottom: 30px;
-}
-.card1,
-.card2 {
+.card1 {
   cursor: pointer;
   /* margin: 0 auto; */
   margin-top: 20px;
@@ -575,6 +577,30 @@ aside h2 {
   box-shadow: 0 0 5px rgb(160, 160, 160);
   margin-bottom: 30px;
   width: 24%;
+  /* padding-bottom: 15px; */
+  height: min-content;
+}
+.card2 {
+  cursor: pointer;
+  /* margin: 0 auto; */
+  margin-top: 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 5px rgb(160, 160, 160);
+  box-shadow: 0 0 5px rgb(160, 160, 160);
+  margin-bottom: 30px;
+  width: 100%;
+}
+#frioul img {
+  height: 160px;
+}
+#pomegues img {
+  height: 220px;
+}
+#notre-dame img {
+  height: 160px;
+}
+#longchamp img {
+  height: 220px;
 }
 .card1:hover,
 .card2:hover {
