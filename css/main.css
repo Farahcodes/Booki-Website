@@ -90,6 +90,7 @@ header li {
 @media (max-width: 640px) {
   header {
     flex-direction: column;
+    align-items: center;
   }
   .navbar {
     flex-direction: column;
