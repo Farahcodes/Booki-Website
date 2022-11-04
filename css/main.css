@@ -453,6 +453,15 @@ aside h2 {
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 }
 @media screen and (min-width: 767px) and (max-width: 992px) {
+  #accomodations-section {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  #accomodations {
+    flex-direction: column;
+  }
 }
 
 /* Activities section */
