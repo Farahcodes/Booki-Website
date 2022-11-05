@@ -87,7 +87,7 @@ header li {
 }
 
 /* Responsive Navbar */
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -305,7 +305,7 @@ input[type="text"]:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card:hover {
@@ -426,32 +426,7 @@ aside h2 {
 }
 
 /* Responsive Accomodations section */
-@media screen and (min-width: 1430px) and (max-width: 1470px) {
-  /* .card {
-    width: 30%;
-  }
-  .card img {
-    width: 100%;
-  } */
-}
-@media screen and (min-width: 1360px) and (max-width: 1430px) {
-  /* .card {
-    width: 45%;
-    height: 270px;
-  }
-  .card img {
-    width: 100%;
-  }
-  #accomodations-section,
-  aside {
-    min-height: 1015px;
-  } */
-}
-@media screen and (min-width: 1200px) and (max-width: 1360px) {
-}
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-}
 @media screen and (min-width: 767px) and (max-width: 992px) {
   #accomodations-section {
     width: 100%;
@@ -461,6 +436,9 @@ aside h2 {
   }
   #accomodations {
     flex-direction: column;
+  }
+  .accomodations-list {
+    justify-content: space-evenly;
   }
 }
 
@@ -553,34 +531,29 @@ aside h2 {
 } */
 
 /* Responsive activities section */
-@media screen and (min-width: 767px) and (max-width: 1400px) {
-  .column1 {
-    width: 55%;
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .card1 img {
+    height: 345px;
   }
-  .column2 {
-    width: 40%;
+  #old-port img {
+    height: 354px;
   }
-  .column1 img,
-  .column2 img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .card1 img,
-  .card2 img {
-    width: 100%;
+  #pomegues img {
     height: 180px;
   }
-  .column1,
-  .column2 {
-    width: 100%;
+  #frioul img {
+    height: 114px;
   }
-}
-@media screen and (max-width: 300px) {
-  .column1,
-  .column2 {
-    width: 95%;
-    margin: 0 auto;
+  #notre-dame img {
+    height: 130px;
+  }
+  #longchamp img {
+    height: 150px;
+  }
+  #activites-section h3 {
+    font-size: 15px;
+    line-height: normal;
   }
 }
 
