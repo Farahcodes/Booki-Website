@@ -86,26 +86,6 @@ header li {
   color: var(--clr-primary);
 }
 
-/* Responsive Navbar */
-@media (max-width: 767px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .navbar {
-    flex-direction: column;
-  }
-  .nav-item a:hover {
-    border-top: none;
-    border-bottom: var(--clr-primary) solid;
-    margin-bottom: -5px;
-  }
-  nav {
-    border-bottom: #f2f2f2 5px solid;
-    padding: 0 200px;
-  }
-}
-
 /* Search Form */
 
 #search {
@@ -193,23 +173,6 @@ input[type="text"]:focus {
   border: 1px solid #f2f2f2;
 }
 
-/* Search Bar for desktop and tablette  */
-@media screen and (min-width: 993px) {
-  .mobileSearchIcon {
-    display: none;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  .mobileSearchIcon {
-    display: none;
-  }
-}
-@media screen and (min-width: 357px) and (max-width: 768px) {
-  .searchText {
-    display: none;
-  }
-}
-
 /* Filters section */
 .filters-section {
   display: flex;
@@ -261,12 +224,6 @@ input[type="text"]:focus {
   padding: 10px;
 }
 
-/* Responsive filters */
-@media screen and (max-width: 768px) {
-  #filters {
-    justify-content: space-around;
-  }
-}
 /* Information section */
 .info {
   display: flex;
@@ -425,41 +382,6 @@ aside h2 {
   margin-top: auto;
 }
 
-/* Responsive Accomodations section */
-
-@media screen and (min-width: 767px) and (max-width: 992px) {
-  #accomodations-section {
-    width: 100%;
-  }
-  aside {
-    width: 100%;
-  }
-  #accomodations {
-    flex-direction: column;
-  }
-  .accomodations-list {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #accomodations {
-    flex-direction: column-reverse;
-  }
-  #accomodations-section {
-    width: 100%;
-  }
-  .accomodations-list {
-    flex-direction: column;
-  }
-  .card {
-    width: 100%;
-  }
-  aside {
-    width: 100%;
-  }
-}
-
 /* Activities section */
 
 #activities-list {
@@ -536,62 +458,6 @@ aside h2 {
   box-shadow: 0 0 15px rgb(95, 95, 95);
 }
 
-/* Responsive activities section */
-
-@media screen and (min-width: 767px) and (max-width: 992px) {
-  .card1 img {
-    height: 345px;
-  }
-  #old-port img {
-    height: 354px;
-  }
-  #pomegues img {
-    height: 180px;
-  }
-  #frioul img {
-    height: 114px;
-  }
-  #notre-dame img {
-    height: 130px;
-  }
-  #longchamp img {
-    height: 150px;
-  }
-  #activites-section h3 {
-    font-size: 15px;
-    line-height: normal;
-  }
-}
-@media screen and (max-width: 767px) {
-  #activities-list {
-    flex-direction: column;
-  }
-  .card1 {
-    width: 100%;
-  }
-  #activity-bloc {
-    width: 100%;
-  }
-  .card1 img {
-    height: 250px;
-  }
-  #old-port img {
-    height: 250px;
-  }
-  #pomegues img {
-    height: 250px;
-  }
-  #frioul img {
-    height: 250px;
-  }
-  #notre-dame img {
-    height: 250px;
-  }
-  #longchamp img {
-    height: 250px;
-  }
-}
-
 /* Footer */
 
 footer {
@@ -623,23 +489,142 @@ footer ul li {
 footer ul li:hover {
   text-decoration: underline;
 }
-@media screen and (min-width: 767px) and (max-width: 992px) {
+
+/******************* Media Queries *******************/
+
+/******************* Desktop *******************/
+@media screen and (min-width: 993px) {
+  /* Search Bar*/
+  .mobileSearchIcon {
+    display: none;
+  }
+}
+
+/******************* Tablet *******************/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* Search Bar */
+  .mobileSearchIcon {
+    display: none;
+  }
+  /* Accomodations section */
+  #accomodations-section {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  #accomodations {
+    flex-direction: column;
+  }
+  .accomodations-list {
+    justify-content: space-evenly;
+  }
+  /* Activities section */
+  .card1 img {
+    height: 345px;
+  }
+  #old-port img {
+    height: 354px;
+  }
+  #pomegues img {
+    height: 180px;
+  }
+  #frioul img {
+    height: 114px;
+  }
+  #notre-dame img {
+    height: 130px;
+  }
+  #longchamp img {
+    height: 150px;
+  }
+  #activites-section h3 {
+    font-size: 15px;
+    line-height: normal;
+  }
+  /* Footer */
   footer {
     margin-bottom: 0;
     font-size: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+
+/******************* Mobile *******************/
+@media (max-width: 767px) {
+  /* Navbar */
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-item a:hover {
+    border-top: none;
+    border-bottom: var(--clr-primary) solid;
+    margin-bottom: -5px;
+  }
+  nav {
+    border-bottom: #f2f2f2 5px solid;
+    padding: 0 200px;
+  }
+  /* Search Bar */
+  .searchText {
+    display: none;
+  }
+  /* Filters */
+  #filters {
+    justify-content: space-around;
+  }
+  /* Accomodations section */
+  #accomodations {
+    flex-direction: column-reverse;
+  }
+  #accomodations-section {
+    width: 100%;
+  }
+  .accomodations-list {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  /* Activities section */
+  #activities-list {
+    flex-direction: column;
+  }
+  .card1 {
+    width: 100%;
+  }
+  #activity-bloc {
+    width: 100%;
+  }
+  .card1 img {
+    height: 250px;
+  }
+  #old-port img {
+    height: 250px;
+  }
+  #pomegues img {
+    height: 250px;
+  }
+  #frioul img {
+    height: 250px;
+  }
+  #notre-dame img {
+    height: 250px;
+  }
+  #longchamp img {
+    height: 250px;
+  }
+  /* Footer */
   footer {
     margin-bottom: 0;
     font-size: 20px;
     display: block;
-  }
-}
-@media screen and (max-width: 300px) {
-  footer {
-    -webkit-box-pack: inherit;
-    -ms-flex-pack: inherit;
-    justify-content: inherit;
   }
 }
