@@ -250,7 +250,7 @@ input[type="text"]:focus {
   margin-bottom: 20px;
 }
 #accomodations-section {
-  padding: 40px;
+  padding: 30px;
   margin-top: 20px;
   background: #f2f2f2;
   border-radius: 20px;
@@ -276,6 +276,8 @@ input[type="text"]:focus {
   border-radius: 27px;
   box-shadow: 0 0 10px rgb(160, 160, 160);
   width: 31%;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .img-container {
@@ -318,7 +320,7 @@ input[type="text"]:focus {
 
 /* Popular section */
 aside {
-  padding: 40px;
+  padding: 30px;
   margin-top: 20px;
   background: #f2f2f2;
   border-radius: 20px;
@@ -338,7 +340,7 @@ aside h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
 }
 #popular-list .card {
   cursor: pointer;
@@ -517,7 +519,7 @@ footer ul li:hover {
     flex-direction: column;
   }
   .accomodations-list {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   /* Activities section */
   .card1 img {
