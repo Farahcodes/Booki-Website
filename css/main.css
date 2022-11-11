@@ -12,10 +12,18 @@ html {
 }
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+h3 {
+  font-size: 16px;
+}
+h2 {
+  font-size: 22px;
 }
 a {
   text-decoration: none;
   color: black;
+  font-size: 16px;
 }
 
 /* Variables */
@@ -238,15 +246,15 @@ input[type="text"]:focus {
   margin-left: 10px;
   line-height: 26px;
 }
+.info h3 {
+  margin-bottom: 10px;
+}
 
 /* Accomodations */
 #accomodations {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  gap: 25px;
   margin-bottom: 20px;
 }
 #accomodations-section {
@@ -255,14 +263,14 @@ input[type="text"]:focus {
   background: #f2f2f2;
   border-radius: 20px;
   margin-top: 20px;
-  width: 66.66%;
+  width: 67%;
 }
 .accomodations-list {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  justify-content: space-around;
+  gap: 30px;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -275,9 +283,7 @@ input[type="text"]:focus {
   padding: 5px;
   border-radius: 27px;
   box-shadow: 0 0 10px rgb(160, 160, 160);
-  width: 31%;
-  display: block;
-  margin-bottom: 20px;
+  width: calc(33.33% - 30px);
 }
 
 .img-container {
@@ -340,7 +346,6 @@ aside h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 30px; */
 }
 #popular-list .card {
   cursor: pointer;
@@ -353,11 +358,10 @@ aside h2 {
 }
 #popular-list a {
   display: flex;
-  flex-direction: row;
 }
 #popular-list .img-container {
   position: relative;
-  width: 39%;
+  width: 130px;
   height: 150px;
 }
 
@@ -374,10 +378,7 @@ aside h2 {
 }
 #popular-list .card .info {
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  flex: 1.5;
-  line-height: 25px;
+  margin-left: 0px;
 }
 
 #popular-stars {
@@ -389,14 +390,20 @@ aside h2 {
 #activities-list {
   display: flex;
   justify-content: space-between;
-  height: 100%;
-  margin-top: 30px;
-  /* flex-wrap: wrap; */
 }
+#activities-list .activity-bloc {
+  display: flex;
+  width: 49%;
+  justify-content: space-between;
+}
+
 #activites-section h3 {
   width: 100%;
   padding: 0 30px 15px 30px;
   line-height: 40px;
+}
+#activites-section h2 {
+  margin-bottom: 10px;
 }
 #activites-section {
   display: flex;
@@ -405,7 +412,7 @@ aside h2 {
 #activity-bloc {
   display: flex;
   flex-direction: column;
-  width: 24%;
+  width: 48%;
 }
 
 .card1-img {
@@ -431,7 +438,7 @@ aside h2 {
   -webkit-box-shadow: 0 0 5px rgb(160, 160, 160);
   box-shadow: 0 0 5px rgb(160, 160, 160);
   margin-bottom: 30px;
-  width: 24%;
+  width: 48%;
   height: min-content;
 }
 .card2 {
@@ -471,8 +478,13 @@ footer {
   gap: 25%;
 }
 
+footer div {
+  margin-bottom: 24px;
+}
+
 #footer-title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 footer ul {
   margin-top: 15px;
@@ -486,7 +498,7 @@ footer ul:first-child {
   margin: 20px 0;
 }
 footer ul li {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 footer ul li:hover {
   text-decoration: underline;
@@ -504,6 +516,9 @@ footer ul li:hover {
 
 /******************* Tablet *******************/
 @media screen and (min-width: 769px) and (max-width: 992px) {
+  .container {
+    padding: 0 20px 0 20px;
+  }
   /* Search Bar */
   .mobileSearchIcon {
     display: none;
@@ -540,6 +555,17 @@ footer ul li:hover {
   #longchamp img {
     height: 150px;
   }
+
+  #activities-list {
+    flex-direction: column;
+  }
+  #activities-list .activity-bloc {
+    width: 100%;
+  }
+
+  #activities-list .activity-bloc:nth-child(2) {
+    flex-direction: row-reverse;
+  }
   #activites-section h3 {
     font-size: 15px;
     line-height: normal;
@@ -552,15 +578,18 @@ footer ul li:hover {
 }
 
 /******************* Mobile *******************/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /* Navbar */
 
   header {
     flex-direction: column;
     align-items: center;
   }
+  header.container {
+    padding: 0px;
+  }
   .navbar {
-    flex-direction: column;
+    flex-direction: revert;
   }
   .nav-item a:hover {
     border-top: none;
@@ -568,8 +597,23 @@ footer ul li:hover {
     margin-bottom: -5px;
   }
   nav {
-    border-bottom: #f2f2f2 5px solid;
-    padding: 0 200px;
+    border-bottom: #f2f2f2 4px solid;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+
+  header li {
+    width: 50%;
+    padding: 0px;
+  }
+
+  .nav-item a {
+    width: 100%;
   }
   /* Search Bar */
   .searchText {
@@ -579,6 +623,7 @@ footer ul li:hover {
   #filters {
     justify-content: space-around;
   }
+
   /* Accomodations section */
   #accomodations {
     flex-direction: column-reverse;
@@ -598,6 +643,10 @@ footer ul li:hover {
   /* Activities section */
   #activities-list {
     flex-direction: column;
+  }
+  #activities-list .activity-bloc {
+    flex-direction: column;
+    width: 100%;
   }
   .card1 {
     width: 100%;
